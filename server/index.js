@@ -7,7 +7,11 @@ const userRoutes = require('./routes/users');
 const botSettingsRoutes = require('./routes/botSettings');
 
 const app = express();
-app.use(cors());
+// ✅ ALLOW specific origin (your frontend domain)
+app.use(cors({
+  origin: 'https://telegram-bot-five-lime.vercel.app',
+  credentials: true
+}));
 app.use(express.json());
 
 // ✅ Connect to "weather" database
