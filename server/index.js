@@ -9,7 +9,7 @@ const botSettingsRoutes = require('./routes/botSettings');
 const app = express();
 // ✅ ALLOW specific origin (your frontend domain)
 app.use(cors({
-  origin: ['https://telegram-bot-yxhs.onrender.com', 'https://telegram-bot-five-lime.vercel.app/users'],
+  origin: ['https://telegram-bot-yxhs.onrender.com', 'https://telegram-bot-five-lime.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
