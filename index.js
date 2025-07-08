@@ -3,8 +3,8 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const userRoutes = require('./routes/users');
-const botSettingsRoutes = require('./routes/botSettings');
+const userRoutes = require('./server/routes/users');
+const botSettingsRoutes = require('./server/routes/botSettings');
 
 const app = express();
 // ✅ ALLOW specific origin (your frontend domain)
